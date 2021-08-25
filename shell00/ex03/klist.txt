@@ -1,0 +1,5 @@
+Credentials cache: API:903F5832-8FFF-4DE4-A49A-2916E0046BE6
+        Principal: mliboz@42LYON.FR
+
+  Issued                Expires               Principal
+Aug  3 09:15:28 2021  Aug  4 09:15:28 2021  krbtgt/42LYON.FR@42LYON.FR
