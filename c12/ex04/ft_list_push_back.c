@@ -3,28 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_list_push_back.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mliboz <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: maxenceliboz <maxenceliboz@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/23 18:14:00 by mliboz            #+#    #+#             */
-/*   Updated: 2021/08/23 21:17:08 by mliboz           ###   ########lyon.fr   */
+/*   Created: 2021/08/30 17:52:34 by maxencelibo       #+#    #+#             */
+/*   Updated: 2021/08/30 18:15:39 by maxencelibo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
-#include <stdlib.h>
+
+t_list	*ft_create_elem(void *data);
 
 void	ft_list_push_back(t_list **begin_list, void *data)
 {
 	t_list	*new_item;
-	t_list	*last;
+	t_list	*head;
 
-	last = *begin_list;
-	new_item = malloc(sizeof(t_list));
+	head = *begin_list;
+	new_item = ft_create_elem(data);
 	if (!new_item)
 		return ;
-	new_item->data = data;
-	new_item->next = 0;
-	while (last->next)
-		last = last->next;
-	last->next = new_item;
+	if (head)
+	{
+		while (head->next)
+			head = head->next;
+		head->next = new_item;
+	}
+	else
+		*begin_list = new_item;
 }
