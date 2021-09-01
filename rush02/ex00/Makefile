@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mliboz <marvin@42.fr>                      +#+  +:+       +#+         #
+#    By: maxenceliboz <maxenceliboz@student.42.f    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/19 13:08:19 by mliboz            #+#    #+#              #
-#    Updated: 2021/08/22 22:42:26 by mliboz           ###   ########lyon.fr    #
+#    Updated: 2021/09/01 17:50:51 by maxencelibo      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,8 @@ SRCS 		= srcs/ft_check_arg.c srcs/ft_argdup.c  srcs/ft_check_dict.c \
 			  srcs/ft_s_rankdup.c srcs/ft_s_valuedup.c \
 			  srcs/ft_search_and_print.c srcs/ft_split_struct_value.c \
 			  srcs/ft_strdup.c srcs/ft_strlen.c srcs/ft_strstr.c \
-			  srcs/ft_putstr.c
-			  
+			  srcs/ft_putstr.c srcs/ft_split_struct_functions.c
+
 
 OBJS 		= ${SRCS:.c=.o}
 
@@ -40,13 +40,13 @@ all:		${NAME}
 .c.o:		${INCLUDES}
 	${CC} ${CFLAGS} -c -I includes $< -o ${<:.c=.o}
 
-${NAME}:	${OBJS} libft.a
+${NAME}:	${MAIN} ${OBJS} libft.a
 	${CC} ${CFLAGS} -o ${NAME} -I includes ${MAIN} ${LIB}
 
 ${LIB}:		${OBJS}
 			ar rc libft.a ${OBJS}
-		
-			
+
+
 clean:
 			${RM} ${OBJS}
 

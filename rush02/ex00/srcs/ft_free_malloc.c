@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_free_malloc.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mliboz <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: maxenceliboz <maxenceliboz@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/22 14:59:17 by mliboz            #+#    #+#             */
-/*   Updated: 2021/08/22 19:22:39 by mliboz           ###   ########lyon.fr   */
+/*   Updated: 2021/09/01 17:25:13 by maxencelibo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+
 #include <ft.h>
+#include <stdlib.h>
 
 void	ft_free_malloc(char *dict, struct s_value *tab)
 {
@@ -22,6 +23,7 @@ void	ft_free_malloc(char *dict, struct s_value *tab)
 	{
 		free(tab[i].value);
 		free(tab[i].rank);
+		i++;
 	}
 	free(tab);
 }

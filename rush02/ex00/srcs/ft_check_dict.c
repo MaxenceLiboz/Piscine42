@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_check_dict.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mliboz <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: maxenceliboz <maxenceliboz@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/21 21:47:48 by mliboz            #+#    #+#             */
-/*   Updated: 2021/08/22 19:08:57 by mliboz           ###   ########lyon.fr   */
+/*   Updated: 2021/09/01 17:33:10 by maxencelibo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <fcntl.h>
+
 #include <stdlib.h>
+#include <fcntl.h>
 #include <unistd.h>
 #include <stdio.h>
 
@@ -34,6 +35,18 @@ int	ft_check_dict_size(char *filename)
 	close(fd);
 	return (size);
 }
+
+/*int	ft_find_error(char *dict)
+{
+	int		i;
+
+	i = 0;
+	while(dict[i])
+	{
+
+		i++;
+	}
+}*/
 
 char	*ft_check_dict(char *filename)
 {
