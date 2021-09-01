@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_argdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mliboz <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: maxenceliboz <maxenceliboz@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/22 15:17:56 by mliboz            #+#    #+#             */
-/*   Updated: 2021/08/22 17:51:34 by mliboz           ###   ########lyon.fr   */
+/*   Updated: 2021/09/01 18:36:10 by maxencelibo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 #include <ft.h>
 

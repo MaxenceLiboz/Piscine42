@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_make_struct_tab.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mliboz <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: maxenceliboz <maxenceliboz@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/21 11:54:51 by mliboz            #+#    #+#             */
-/*   Updated: 2021/08/22 22:18:11 by mliboz           ###   ########lyon.fr   */
+/*   Updated: 2021/09/01 18:50:06 by maxencelibo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <ft.h>
@@ -22,12 +23,9 @@ struct s_value	*ft_make_struct_tab(char *arg)
 	int			arglen;
 
 	ival = 0;
-	size = ft_strlen(arg);
-	arglen = size;
-	if (size % 3 != 0)
-		size = (size - (size % 3) + 3) / 3;
-	else
-		size = size / 3;
+	size = (ft_strlen(arg) - 1) / 3 + 1;
+	arglen = ft_strlen(arg);
+	printf("%d\n", size);
 	s_values = malloc(sizeof(*s_values) * (size + 1));
 	if (!s_values)
 		return (0);

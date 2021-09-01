@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_display.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fdevigne <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: maxenceliboz <maxenceliboz@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/22 10:36:17 by fdevigne          #+#    #+#             */
-/*   Updated: 2021/08/22 16:03:23 by mliboz           ###   ########lyon.fr   */
+/*   Updated: 2021/09/01 18:36:34 by maxencelibo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 #include <ft.h>
 

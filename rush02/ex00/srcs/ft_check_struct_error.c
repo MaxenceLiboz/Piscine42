@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_check_struct_error.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mliboz <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: maxenceliboz <maxenceliboz@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/21 13:57:21 by mliboz            #+#    #+#             */
-/*   Updated: 2021/08/22 15:44:45 by mliboz           ###   ########lyon.fr   */
+/*   Updated: 2021/09/01 18:36:25 by maxencelibo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 #include <ft.h>
 

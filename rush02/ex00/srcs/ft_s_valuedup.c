@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_s_valuedup.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleveil <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: maxenceliboz <maxenceliboz@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/21 11:51:44 by aleveil           #+#    #+#             */
-/*   Updated: 2021/08/22 17:47:06 by mliboz           ###   ########lyon.fr   */
+/*   Updated: 2021/09/01 18:37:06 by maxencelibo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 #include <ft.h>
 
