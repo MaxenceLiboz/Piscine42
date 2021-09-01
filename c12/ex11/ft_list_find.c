@@ -3,21 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_list_find.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mliboz <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: maxenceliboz <maxenceliboz@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 12:47:56 by mliboz            #+#    #+#             */
-/*   Updated: 2021/08/24 13:07:17 by mliboz           ###   ########lyon.fr   */
+/*   Updated: 2021/09/01 16:32:09 by maxencelibo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "ft_list.h"
 
 t_list	*ft_list_find(t_list *begin_list, void *data_ref, int (*cmp)())
 {
-	while (begin_list->next)
+	t_list	*head;
+
+	if (!begin_list)
+		return (begin_list);
+	head = begin_list;
+	while (head)
 	{
-		if ((*cmp)(begin_list->data, data_ref) == 0)
-			return (begin_list);
-		begin_list = begin_list->next;
+		if ((*cmp)(head->data, data_ref) == 0)
+			return (head);
+		head = head->next;
 	}
 	return (begin_list);
 }
